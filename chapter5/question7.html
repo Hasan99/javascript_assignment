@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+
+<body>
+    <h1>Question 7</h1>
+
+    <script>
+        var itemPrices = [50, 100];
+        var itemQuantities = [4, 5];
+        var shippingCharges = 100;
+
+        var totalCost = (itemQuantities[0] * itemPrices[0]) + (itemQuantities[1] * itemPrices[1]) + shippingCharges;
+
+        document.write("<h2>Shopping Cart</h2><br />");
+
+        document.write("<h4>Price of Item 1 is " + itemPrices[0] + "</h4>");
+        document.write("<h4>Quantity of Item 1 is " + itemQuantities[0] + "</h4>");
+
+        document.write("<h4>Price of Item 2 is " + itemPrices[1] + "</h4>");
+        document.write("<h4>Quantity of Item 2 is " + itemQuantities[1] + "</h4>");
+
+        document.write("<h4>Shipping Charges " + shippingCharges + "</h4>");
+
+        document.write("<h4>Total cost of your order is " + totalCost + "</h4>");
+    </script>
+</body>
+
+</html>

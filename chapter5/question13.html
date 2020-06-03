@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+
+<body>
+    <h1>Question 13</h1>
+
+    <script>
+        var date = new Date();
+        var currentAge = date.getFullYear() - 1995;
+
+        var snack = "Slanty";
+        var maxAge = 70;
+        var perDay = 3;
+
+        var total = (3 * 365) * (maxAge - currentAge);
+
+        document.write("<h1>The Lifetime Supply Calculator</h1>");
+        document.write("Favourite Snack: " + snack + "<br />");
+        document.write("Current Age: " + currentAge + "<br />");
+        document.write("Estimated Maximum Age: " + maxAge + "<br />");
+        document.write("Amount of snacks per day: " + perDay + "<br />");
+        document.write("You will need " + total.toLocaleString() + " " + snack + " to last you until the ripe old age of " + maxAge);
+    </script>
+</body>
+
+</html>

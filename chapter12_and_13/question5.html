@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+
+<body>
+    <h1>Question 5</h1>
+
+    <script>
+        var actualPassword = "singhisking";
+
+        while (true) {
+            var userPassword = prompt("Enter Password");
+
+            if (userPassword === "" || userPassword === null) {
+                alert("Please enter your password!");
+            }
+            else if (userPassword === actualPassword) {
+                alert("Correct! The password you entered matches the original password");
+                document.write("<h3>Welcome!</h3>");
+                break;
+            }
+            else {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
+</body>
+
+</html>

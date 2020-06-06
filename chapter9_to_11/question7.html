@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+
+<body>
+    <h1>Question 7</h1>
+
+    <script>
+        var secretNumber = Math.random();
+        secretNumber = (secretNumber * 10) + 1;
+        secretNumber = Math.floor(secretNumber);
+
+        var guessedNumber = prompt("Enter guess number from 1 to 10");
+
+        if (parseInt(guessedNumber) === secretNumber) {
+            alert("Bingo! Correct answer");
+        }
+        else if ((parseInt(guessedNumber) + 1) === secretNumber) {
+            alert("Close enough to the Correct answer");
+        }
+    </script>
+</body>
+
+</html>

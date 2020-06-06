@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+
+<body>
+    <h1>Question 6</h1>
+
+    <script>
+        var marksOfSubject1 = prompt("Enter marks of Subject 1");
+        var marksOfSubject2 = prompt("Enter marks of Subject 2");
+        var marksOfSubject3 = prompt("Enter marks of Subject 3");
+
+        var totalMarks = Number(marksOfSubject1) + Number(marksOfSubject2) + Number(marksOfSubject3);
+
+        var overallPercentage = (totalMarks / 300) * 100;
+
+        var grade = "", remarks = "";
+
+        if (overallPercentage >= 80) {
+            grade = "A-one";
+            remarks = "Excellent";
+        }
+        else if (overallPercentage >= 70) {
+            grade = "A";
+            remarks = "Good";
+        }
+        else if (overallPercentage >= 60) {
+            grade = "B";
+            remarks = "You need to improve";
+        }
+        else if (overallPercentage < 60) {
+            grade = "Fail";
+            remarks = "Sorry";
+        }
+
+        document.write("<h1>Marksheet</h1>");
+        document.write(`<h2>Total Marks : 300</h2>`);
+        document.write(`<h2>Marks Obtained : ${totalMarks}</h2>`);
+        document.write(`<h2>Percentage : ${overallPercentage}%</h2>`);
+        document.write(`<h2>Grade : ${grade}</h2>`);
+        document.write(`<h2>Remarks : ${remarks}</h2>`);
+    </script>
+</body>
+
+</html>

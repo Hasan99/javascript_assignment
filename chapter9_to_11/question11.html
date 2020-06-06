@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+
+<body>
+    <h1>Question 11</h1>
+
+    <script>
+        var num1 = prompt("Enter number 1");
+        var num2 = prompt("Enter number 2");
+        var operator = prompt("Enter any operator from ( + - * / % )");
+
+        if (operator === "+") {
+            document.write(`${num1} + ${num2} = ${Number(num1) + Number(num2)}`);
+        }
+        else if (operator === "-") {
+            document.write(`${num1} - ${num2} = ${Number(num1) - Number(num2)}`);
+        }
+        else if (operator === "*") {
+            document.write(`${num1} * ${num2} = ${Number(num1) * Number(num2)}`);
+        }
+        else if (operator === "/") {
+            document.write(`${num1} / ${num2} = ${Number(num1) / Number(num2)}`);
+        }
+        else if (operator === "%") {
+            document.write(`${num1} % ${num2} = ${Number(num1) % Number(num2)}`);
+        }
+        else {
+            document.write(`Invalid operator '${operator}'`);
+        }
+    </script>
+</body>
+
+</html>

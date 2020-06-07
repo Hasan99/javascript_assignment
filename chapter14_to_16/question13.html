@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+
+<body>
+    <h1>Question 13</h1>
+
+    <script>
+        var devices = ["keyboard", "mouse", "printer", "monitor"];
+        var temp = "";
+        var out = "";
+
+        for (let device of devices) {
+            temp = temp + device + ", ";
+        }
+
+        document.write(`<h2>Devices:<br />${temp}</h2>`);
+
+        for (var index = 0; index < 4; index++) {
+            out = devices.shift();
+            document.write(`<h2>Out:<br />${out}</h2>`);
+        }
+    </script>
+</body>
+
+</html>

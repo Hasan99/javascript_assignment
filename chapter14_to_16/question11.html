@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+
+<body>
+    <h1>Question 11</h1>
+
+    <script>
+        var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+        var temp = "";
+
+        for (let city of cities) {
+            temp = temp + city + ", ";
+        }
+
+        document.write(`<h2>Cities:<br />${temp}</h2>`);
+
+        var selectedCities = cities.slice(0, 3);
+
+        temp = "";
+
+        for (let city of selectedCities) {
+            temp = temp + city + ", ";
+        }
+
+        document.write(`<h2>Selected Cities:<br />${temp}</h2>`);
+    </script>
+</body>
+
+</html>

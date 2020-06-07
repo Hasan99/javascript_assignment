@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+
+<body>
+    <h1>Question 9</h1>
+
+    <script>
+        var colors = ["red", "blue", "green", "yellow", "black"];
+        var temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>Colors: ${temp}</h2>`);
+
+        var newColor = prompt("Enter color to add in the beginning");
+
+        colors.unshift(newColor);
+
+        temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>Added in start: ${temp}</h2>`);
+
+        newColor = prompt("Enter color to add in the end");
+
+        colors.push(newColor);
+
+        temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>Added in end: ${temp}</h2>`);
+
+        colors.unshift("lime", "purple");
+
+        temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>Added two more colors in start: ${temp}</h2>`);
+
+        colors.shift();
+
+        temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>Deleted first color: ${temp}</h2>`);
+
+        colors.pop();
+
+        temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>Deleted last color: ${temp}</h2>`);
+
+        var index = parseInt(prompt("Enter index"));
+        newColor = prompt(`Enter color to insert at index ${index}`);
+
+        colors.splice(index, 0, newColor);
+
+        temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>Color inserted at index ${index}: ${temp}</h2>`);
+
+        var index = parseInt(prompt("Enter index to delete color"));
+        var deleteCount = parseInt(prompt(`Enter number (1 to ${colors.length}) of colors to delete`));
+
+        colors.splice(index, deleteCount);
+
+        temp = "";
+
+        for (let color of colors) {
+            temp = temp + color + " ";
+        }
+
+        document.write(`<h2>After deleting: ${temp}</h2>`);
+    </script>
+</body>
+
+</html>

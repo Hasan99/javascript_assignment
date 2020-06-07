@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+</head>
+
+<body>
+    <h1>Question 12</h1>
+
+    <script>
+        var array = ["This", "is", "my", "cat."];
+        var temp = "";
+
+        for (let element of array) {
+            temp = temp + element + ", ";
+        }
+
+        document.write(`<h2>Array:<br />${temp}</h2>`);
+
+        temp = array.join(" ");
+
+        document.write(`<h2>String:<br />${temp}</h2>`);
+    </script>
+</body>
+
+</html>

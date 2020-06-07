@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+
+<body>
+    <h1>Question 6</h1>
+
+    <script>
+        var temp = "";
+
+        document.write("<h2>Counting:</h2>");
+
+        for (let index = 1; index <= 15; index++) {
+            temp = temp + index + ", ";
+        }
+
+        document.write(`<h3>${temp}</h3>`);
+
+        temp = "";
+
+        document.write("<h2>Reverse counting:</h2>");
+
+        for (let index = 10; index >= 1; index--) {
+            temp = temp + index + ", ";
+        }
+
+        document.write(`<h3>${temp}</h3>`);
+
+        temp = "";
+
+        document.write("<h2>Even:</h2>");
+
+        for (let index = 0; index <= 20; index += 2) {
+            temp = temp + index + ", ";
+        }
+
+        document.write(`<h3>${temp}</h3>`);
+
+        temp = "";
+
+        document.write("<h2>Odd:</h2>");
+
+        for (let index = 1; index <= 20; index += 2) {
+            temp = temp + index + ", ";
+        }
+
+        document.write(`<h3>${temp}</h3>`);
+
+        temp = "";
+
+        document.write("<h2>Series:</h2>");
+
+        for (let index = 2; index <= 20; index += 2) {
+            temp = temp + index + "k, ";
+        }
+
+        document.write(`<h3>${temp}</h3>`);
+    </script>
+</body>
+
+</html>

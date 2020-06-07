@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+
+<body>
+    <h1>Question 4</h1>
+
+    <script>
+        var number = parseInt(prompt("Enter a number to show its multiplication table"));
+        var times = parseInt(prompt("Enter length multiplication table"));
+
+        document.write(`<h3>Multiplication table of ${number}</h3>`);
+        document.write(`<h3>Length ${times}</h3>`);
+
+        for (let index = 1; index <= times; index++) {
+            document.write(`<h3>${number} x ${index} = ${number * index}</h3>`);
+        }
+    </script>
+</body>
+
+</html>

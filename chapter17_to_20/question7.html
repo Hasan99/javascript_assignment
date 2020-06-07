@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+
+<body>
+    <h1>Question 7</h1>
+
+    <script>
+        var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+        var itemToSearch = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
+        var found = true;
+
+        for (let index = 0; index < items.length; index++) {
+            if (itemToSearch.toLowerCase() === items[index]) {
+                alert(`${itemToSearch} is available at index ${index} in our bakery`);
+                found = false;
+                break;
+            }
+        }
+
+        if (found) {
+            alert(`We are sorry. ${itemToSearch} is not available in our bakery`);
+        }
+    </script>
+</body>
+
+</html>

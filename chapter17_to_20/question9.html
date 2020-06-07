@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+
+<body>
+    <h1>Question 9</h1>
+
+    <script>
+        var array = [24, 53, 78, 91, 12];
+        var temp = "";
+        var min = array[0];
+
+        for (const element of array) {
+            temp = temp + element + ", ";
+        }
+
+        document.write(`<h2>Array items: ${temp}</h2>`);
+
+        for (const element of array) {
+            if (element < min) {
+                min = element;
+            }
+        }
+
+        document.write(`<h2>The smallest number is ${min}</h2>`);
+    </script>
+</body>
+
+</html>
